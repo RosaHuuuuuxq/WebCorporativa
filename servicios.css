@@ -1,0 +1,210 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #f1f1f1;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #003366;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    background-position: center;
+}
+.headerr{
+    background-color:#003366;
+    display: flex;
+    color:white;
+    padding: 20px 25px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.logo {
+    font-size: 20px;
+    /*definir el grosor, bold: mostrar el texto en negrita*/
+    font-weight: bold;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    /*aplicar margenes con resto de cartas*/
+    margin: 20px;
+}
+.card .face{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 5px 10px #000;
+}
+
+.card .front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /*indica como el contenido de un elemento debera ser redimensionado para 
+    ajustarse a su contenedor*/
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #f3f3f3;
+    background: rgb(0, 0, 0, 0.4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 5px 10px #000;
+}
+.card .back .link{
+    border-top: 1px solid #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: #f3f3f3;
+}
+.card .back h3{
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+.card .back p{
+    letter-spacing: 1px;
+}
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px)rotateY(360deg);
+}
+
+
+footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    width: 100%;
+    height: 50px;
+    /*pegar el elemento al borde inferior*/
+    bottom: 0;
+    position: fixed;
+}
+.menu{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu a{
+    text-decoration: none ;
+    display: block;
+    padding: 20px 30px;
+    color: black;
+    font-size: 17px;
+}
+
+.card .front img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #f3f3f3;
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 2;
+}
+
+/* ===== NAV ===== */
+nav {
+    background-color: #f4f4f4;
+  }
+  .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .menu li {
+    position: relative;
+  }
+  .menu a {
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+    color: black;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: #f4f4f4;
+    list-style: none;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  }
+  .submenu li a {
+    padding: 10px 20px;
+  }
+  .submenu-parent:hover .submenu {
+    display: block;
+  }
+  nav a:hover {
+    color:darkgoldenrod;
+}

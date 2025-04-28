@@ -1,0 +1,129 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+ul,li{
+    list-style: none;
+}
+body{
+    margin: 0px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-color: #f1f1f1;
+}
+.headerr{
+    background-color:#003366;
+    display: flex;
+    color:white;
+    padding: 25px 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.logo {
+    font-size: 20px;
+    /*definir el grosor, bold: mostrar el texto en negrita*/
+    font-weight: bold;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.barraSeguridad{
+    background-color: aliceblue;
+    display: flex;
+    color: rgb(79, 79, 79);
+    padding: 8px 200px;
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+.imgSeguridad{
+    padding-top: 1px;
+    width: 25px;
+    height: 25px;
+}
+h1{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 25px 100px;
+    color:#002850;
+}
+h2{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 20px 200px;
+}
+.contenedor{
+    width: 60%;
+    padding: 0px 200px;
+}
+.formulario{
+    background: #fff;
+    margin-top: 100px;
+}
+.input-contenedor{
+    margin-bottom: 10px;
+    border: 1px solid #aaa;
+}
+input[type="text"], input[type="password"]{
+    text-align: center;
+    font-size: 15px;
+    width: 90%;
+    padding: 5px;
+    border: none;
+    background-color: #e6e6e6;
+    border-top-left-radius: 5px;
+    border-top-right-radius:5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.icon{
+    padding-top: 4px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+input {
+    height: 30px;
+    width: 100%;
+}
+.button{
+    border: none;
+    width: 25%;
+    font-size: 15px;
+    color: white;
+    background-color: #253755;
+    padding: 5px 5px;
+    border-radius: 5px;
+
+    align-items: center;
+}
+footer {
+    text-align: center;
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 14px;
+}
+
+.barraOfrecer{
+    background-color: aliceblue;
+    display: flex;
+    color: rgb(79, 79, 79);
+    font-size: 14px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 16px 200px;
+}
+.frase{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: #002850;
+}
+a{
+    text-decoration: none;
+    color: #0b58a4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="formulario.css" type="text/css" media="all">
+  <link rel="shortcut icon" href="img/logo.png"> 
+  <title>DATOS CONTACTO</title>
+</head>
+
+<body>
+
+  <header class="headerr">
+    <div class="logo">Banco RoMa</div>
+  </header>
+
+  <nav>
+    <ul class="menu">
+      <div><a href="home.html">Inicio</a></div>
+      <div><a href="quienessomos.html">Quiénes Somos</a></div>
+<!-- 1 Nuevo  sumbmenu -->
+<li class="submenu-parent">
+<a href="servicios.html">Servicios</a>
+ <ul class="submenu">
+    <li><a href="CuentaCorriente.html">Cuenta Corriente</a></li>
+    <li><a href="inversiones.html">Inversiones</a></li>
+</ul>
+</li>
+
+      <div><a href="localizacion.html">Localización</a></div>
+      <div><a href="formulario.html">Contacto</a></div>
+    </ul>
+</nav>
+  <form class="formulario-contenedor" name="formulario" method="post" action="http://pagina.com/send.php">
+
+    <h2 class="formulario-titulo">Formulario de Contacto del Banco RoMa</h2>
+
+    <!-- DATOS PERSONALES -->
+    <fieldset>
+      <legend class="formulario-subtitulo">Datos personales</legend>
+
+      <div class="formulario-fila-doscampos">
+        <div class="formulario-campo">
+          <label>Nombre
+            <input type="text" placeholder="Nombre" class="formulario-input" minlength="3" maxlength="50" required>
+          </label>
+        </div>
+        <div class="formulario-campo">
+          <label>Apellidos
+            <input type="text" placeholder="Apellidos" class="formulario-input" minlength="3" maxlength="50" required>
+          </label>
+        </div>
+      </div>
+
+      <div class="formulario-fila-trescampos">
+        <div class="formulario-campo">
+          <label>Teléfono
+            <input type="text" placeholder="Teléfono" class="formulario-input">
+          </label>
+        </div>
+        <div class="formulario-campo">
+          <label>Email
+            <input type="text" placeholder="Email" class="formulario-input">
+          </label>
+        </div>
+        <div class="formulario-campo">
+          <label>DNI
+            <input type="text" placeholder="DNI" class="formulario-input" minlength="3" maxlength="9" required pattern="[0-9]{8}[A-Za-z]{1}">
+          </label>
+        </div>
+      </div>
+      <!-- NUEVA FILA: EDAD, FECHA DE NACIMIENTO, SEXO -->
+      <div class="formulario-fila-trescampos">
+        <div class="formulario-campo">
+          <label>Edad
+            <input type="number" name="edad" min="18" max="100" placeholder="Edad" class="formulario-input" minlength="1" maxlength="2">
+          </label>
+        </div>
+        <div class="formulario-campo">
+          <label>Fecha de nacimiento
+            <input type="date" class="formulario-input">
+          </label>
+        </div>
+        <div class="formulario-campo">
+          <label>Sexo</label><br>
+          <label><input type="radio" name="sexo" value="H"> Hombre</label>
+          <label><input type="radio" name="sexo" value="M"> Mujer</label>
+        </div>
+      </div>
+
+    </fieldset>
+
+    <!-- DOCUMENTACIÓN PRESENTADA -->
+    <fieldset>
+      <legend class="formulario-subtitulo">Documentación presentada</legend>
+      <div class="formulario-opciones">
+        <label><input type="checkbox" name="documentacion" value="dni"> Fotocopia DNI</label>
+        <label><input type="checkbox" name="documentacion" value="certificado"> Certificado académico</label>
+        <label><input type="checkbox" name="documentacion" value="nomina"> Nómina</label>
+      </div>
+    </fieldset>
+
+    <!-- FIRMA -->
+    <fieldset>
+      <legend class="formulario-subtitulo">Firma y Aceptación</legend>
+      <p>
+        Aplicando la cláusula de la Sección 1.10.32 de "de Finibus Bonorum et Malorum", escrito por Cicerón para la aceptación de hipotecas:
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, se acepta la propuesta."
+      </p>
+    
+      <div class="formulario-fila-trescampos">
+        <div class="formulario-campo">
+          <label>Lugar
+            <input type="text" placeholder="Lugar" list="itemsLugar" class="formulario-input">
+            <datalist id="itemsLugar">
+              <option value="Madrid" />
+              <option value="Barcelona" />
+              <option value="Valencia" />
+              <option value="Baleares" />
+              <option value="Toledo" />
+            </datalist>
+          </label>
+        </div>
+    
+        <div class="formulario-campo">
+          <label>Fecha
+            <input type="date" class="formulario-input">
+          </label>
+        </div>
+    
+        <div class="formulario-campo">
+          <label>Firma del solicitante
+            <input type="text" placeholder="Firma del solicitante" class="formulario-input">
+          </label>
+        </div>
+      </div>
+    </fieldset>
+    
+
+    <!-- AYUDA Y CONSULTA -->
+ 
+
+      <P class="formulario-campo">
+        <label for="comentarios">Describe tu consulta</label>
+        <textarea id="comentarios" name="comentarios" rows="5" placeholder="Describe tu consulta..." required></textarea>
+      </P>
+
+
+    <!-- BOTONES DE FORMULARIO -->
+    <div class="formulario-fila-doscampos">
+      <div class="formulario-campo">
+        <input type="reset" value="Borrar formulario" class="formulario-boton">
+      </div>
+      <div class="formulario-campo">
+        <input type="submit" value="Enviar formulario" class="formulario-boton">
+      </div>
+    </div>
+
+    <!-- CONDICIONES DE USO -->
+    <p>Al registrarse, acepta nuestras condiciones de uso y política de privacidad del Banco Aurora.</p>
+    <p>¿No tienes cuenta? <a class="link" href="registro.html">Regístrate aquí</a></p>
+    <button type="button" class="boton-ayuda" onclick="alert('¡Hola señor!, ¿Podemos ayudarle en algo?')">
+      <img src="img/wassup.jpg" alt="Icono ayuda"> Ayuda
+    </button>
+  </form>
+
+  <footer class="footer">
+    <div>2025 Banco RoMa. Todos los derechos reservados.</div>
+</footer>
+
+</body>
+</html>

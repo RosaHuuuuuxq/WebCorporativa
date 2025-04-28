@@ -1,0 +1,187 @@
+
+/* No queremos etiquetas flexbox*/
+
+
+
+* {
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  }
+  ul,li{
+    list-style: none;
+}
+  .formulario-fila-doscampos {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 0; 
+  }
+
+  .formulario-campo {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    font-size: 16px;
+  }
+  
+  .formulario-campo:first-child {
+    margin-right: 2%;
+  }
+  
+  
+  .formulario-titulo {
+    text-align: center;
+    font-size: 28px;
+    color: #003366;
+    margin-bottom: 20px;
+  }
+  
+  .formulario-contenedor {
+    margin: 0 auto;
+    max-width: 800px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .formulario-bloque {
+    margin-bottom: 25px;
+  }
+  
+  .formulario-subtitulo {
+    font-size: 24px;
+    color: #003366;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .formulario-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-top: 5px;
+  }
+  
+  .formulario-opciones label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .formulario-boton {
+    width: 100%;
+    padding: 12px;
+    background-color: #003366;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  .formulario-boton:hover {
+    background-color: #002244;
+  }
+  
+  /* Botón de ayuda con ícono */
+  .boton-ayuda {
+    margin-top: 20px;
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .boton-ayuda img {
+    vertical-align: middle;
+    height: 20px;
+    margin-right: 8px;
+  }
+  
+  /* Textarea más grande */
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    resize: vertical;
+    min-height: 150px;
+  }
+  
+  .formulario-fila-trescampos {
+    width: 100%;
+    font-size: 0;  
+    margin-bottom: 20px;
+  }
+  
+  .formulario-fila-trescampos .formulario-campo {
+    display: inline-block;
+    width: 32%;
+    margin-right: 2%;
+    font-size: 16px;  
+    vertical-align: top;
+  }
+  
+  .formulario-fila-trescampos .formulario-campo:last-child {
+    margin-right: 0;
+  }
+
+  .headerr{
+    background-color:#003366;
+    display: flex;
+    color:white;
+    padding: 25px 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.menu{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.menu a{
+  text-decoration: none ;
+  display: block;
+  padding: 20px 30px;
+  color: black;
+  font-size: 17px;
+}
+footer {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 14px;
+}
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #f4f4f4;
+  list-style: none;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+.submenu li a {
+  padding: 10px 20px;
+}
+.submenu-parent:hover .submenu {
+  display: block;
+}
+nav a:hover {
+  color:darkgoldenrod;
+}
+ 
+   
