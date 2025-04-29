@@ -58,11 +58,6 @@
   }
   
   
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-  
   main {
     display: flex;
     flex-wrap: wrap;
