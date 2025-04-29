@@ -145,9 +145,11 @@ footer {
 .menu a{
     text-decoration: none ;
     display: block;
-    padding: 20px 30px;
     color: black;
     font-size: 17px;
+    width: 85%;
+    margin: auto;
+    padding: 20px;
 }
 
 .card .front img {
