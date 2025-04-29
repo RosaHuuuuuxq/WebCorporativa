@@ -35,6 +35,12 @@
     display: flex;
     justify-content: center;
   }
+  @media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+  }
   .menu li {
     position: relative;
   }

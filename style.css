@@ -30,9 +30,15 @@
   }
   .menu{
     display: flex;
-    text-align: center;
     justify-content: center;
+    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+  }
+  @media (max-width: 600px) {
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
   }
   .menu a{
     text-decoration: none ;
